@@ -3,6 +3,7 @@ title: Express 中文文档 - 快速入门 - 路由
 date: 
         2019-07-31 16:39:27
 tags: 前端
+featured_image: https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_960_720.jpg
 ---
 # 基本的路由
 `Routing`是指确定一个应用是如何响应客户端发送到特定端点的请求，该端点是URI(或路径)和特定的HTTP请求方法(GET、POST等)。

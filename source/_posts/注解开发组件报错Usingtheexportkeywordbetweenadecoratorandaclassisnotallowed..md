@@ -3,6 +3,7 @@ title: 注解开发组件 报错 Using the export keyword between a decorator an
 date: 
         2019-08-30 11:05:06
 tags: 前端
+featured_image: https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg
 ---
 # vue组件注解方式报错 error  Parsing error: Using the export keyword between a decorator and a class is not allowed. Please use `export @dec class` instead.  
 在 `npx create-nuxt-app` 拉下来的代码中，已完成了 ts 的引入。然后想使用 `注解方式` 开发 Vue 组件的时候发现按照文档中的方式 在vscode 中被无情的标记上了红线，以及编译不通过。
