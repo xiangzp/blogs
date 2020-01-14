@@ -7,7 +7,7 @@ title: 项志鹏的博客
 subtitle: 项志鹏的博客
 description: 山高自有可行路，水深自有渡船人。
 keywords: 个人博客,前端博客,项志鹏
-author: 项志鹏
+author: Xiang
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -46,11 +46,9 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+  hljs: true #新增hljs参数，并设为true，不然无法使用highlight.js 官方的 css
+  line_number: false #暂不支持行号
+  auto_detect: false #这一项也关闭，若开启有可能报错
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -93,7 +91,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-Journal
+theme: huhu
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -101,3 +99,29 @@ deploy:
   type: git
   repo: https://github.com/xiangzp/xiangzp.github.io
   branch: master
+
+#https://github.com/alexbruno/hexo-generator-json-content
+jsonContent:
+  dateFormat: YYYY/MM/DD
+  pages: false
+  posts:
+    tags: true
+    title: true
+    date: true
+    text: true
+    permalink: true
+    photos: true
+  file: content.json
+
+
+  #rss
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ''
+  order_by: -date
+  icon: icon.png
