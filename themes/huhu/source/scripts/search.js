@@ -5,7 +5,7 @@ define(['jquery', 'util'], function($, util) {
   'use strict'
 
   var SEARCH_KEY = 'SEARCH'
-  var SEARCH_EXPIRE = 30 * 24 * 60 * 60 * 1000 // 默认过期时间30天
+  var SEARCH_EXPIRE = 10 * 24 * 60 * 60 * 1000 // 默认过期时间10天
   var resultBoxDom = $('#result-box')
   var resultConutBoxDom = $('#result-count')
   var _img_temp = `<div class="left" style="background-image: url('{IMG}')"></div>`
@@ -66,7 +66,7 @@ define(['jquery', 'util'], function($, util) {
     if (key) {
       // 尝试获取数据
       getSeatchData().then(data => {
-        let posts = data.posts
+        let posts = data.posts || data || []
 
         if (posts.length) {
           let result
@@ -77,7 +77,7 @@ define(['jquery', 'util'], function($, util) {
             let _li = ''
             for (let i = 0; i < result.length; i++) {
               let _img = ''
-              if (result[i].photos.length > 0) {
+              if (result[i].photos && result[i].photos.length > 0) {
                 _img = _img_temp.replace('{IMG}', result[i].photos[0])
               }
 

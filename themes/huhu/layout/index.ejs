@@ -8,6 +8,7 @@ function getFeaturedImage(item) {
 %>
 
 <% if (is_home()){ %>
+<h3 class="posts-title">全部文章</h3>
 <div class="posts">
   <ul>
     <% page.posts.each(function (post, key) { %> <% let bg = post.photos && post.photos[0] || ''%>
@@ -36,16 +37,6 @@ function getFeaturedImage(item) {
         </div>
       <% } %>
 
-      <% if (bg) { %>
-      <div class="bg">
-        <a
-          href="<%- url_for(post.path) %>"
-          class="photo"
-          title="<%= post.title %>"
-          style="background-image: url( <%= bg %> )"
-        ></a>
-      </div>
-      <% }%>
       <div class="describe">
         <% if(post.featured_image){ %>
           <div class="post-item-image-wrapper">
@@ -56,15 +47,14 @@ function getFeaturedImage(item) {
         <div class="title">
           <a href="<%- url_for(post.path) %>"><%= post.title %></a>
         </div>
-        <div class="date">
-          <span class="iconfont icon-time-circle"></span>
-          <span><%- date(post.date, "YY/MM/DD") %></span>
-        </div>
         <div class="summary">
           <%= post.intro && post.intro.length > 0 ? post.intro : truncate(strip_html(post.content), {
               length: config.truncate_len ? config.truncate_len : theme.truncate_len ? theme.truncate_len : 70,
               omission: '...'
           }) %>
+        </div>
+        <div class="date">
+          <span><%- date(post.date, "YYYY/MM/DD") %></span>
         </div>
         <% if (post.excerpt) { %>
         <div class="excerpt post-wrap"><%- post.excerpt %></div>

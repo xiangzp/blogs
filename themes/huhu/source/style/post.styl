@@ -54,7 +54,7 @@ line-height = 2rem
     .meta {
       display-flex()
       flex-wrap(wrap)
-      justify-content(space-between)
+      justify-content(flex-start)
       font-size: 0.75rem
       color: rgb(137, 137, 137)
 
@@ -69,8 +69,7 @@ line-height = 2rem
 
       .item {
         display-flex()
-        width: 50%
-        margin-bottom: 1rem
+        padding-right: 0.5rem
 
         a {
           padding-right: 0.3rem
@@ -89,6 +88,7 @@ line-height = 2rem
     min-height: 250px
     background-size: cover
     background-position: center center
+    background-color: #fff
 
     .header-inner{
       position: absolute
@@ -97,7 +97,7 @@ line-height = 2rem
       right: 0
       bottom: 0
       color: #fff
-      text-shadow: 0 0 20px rgba(0, 0, 0, .8)
+      text-shadow: 0 0 8px rgba(0,0,0,0.8);
       span, a{
         color: #fff
       }
