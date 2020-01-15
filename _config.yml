@@ -125,3 +125,8 @@ feed:
   content_limit_delim: ''
   order_by: -date
   icon: icon.png
+
+admin:
+  username: lifewillbefantastic
+  password_hash: $2a$10$y4HFmFif7X4aqDypWlq7mu7CNFI/VqcF36MeeXy9j2AM.xwrgygcq
+  secret: lifewillbefantasticxzp940918

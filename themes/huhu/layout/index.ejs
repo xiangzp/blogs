@@ -62,7 +62,7 @@ function getFeaturedImage(item) {
         </div>
         <div class="summary">
           <%= post.intro && post.intro.length > 0 ? post.intro : truncate(strip_html(post.content), {
-              length: config.truncate_len ? config.truncate_len : theme.truncate_len ? theme.truncate_len : 70,
+              length: config.truncate_len ? config.truncate_len : theme.truncate_len ? theme.truncate_len : 100,
               omission: '...'
           }) %>
         </div>
