@@ -583,6 +583,7 @@
             background-color: #fff
             transition: all 0.3s
             border: 1px solid #e1e4e8
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.1)
 
             &:hover {
                 transform: translateY(-0.01rem)
@@ -615,17 +616,32 @@
                 padding: 1rem
                 font-size: 0.8rem
 
+                .post-item-image-wrapper{
+                    margin: -1rem -1rem 1rem -1rem
+
+                    div{
+                        min-height: 150px
+                        background-position: center center
+                        background-size: cover
+                    }
+                }
+
                 .title {
                     ellipsis()
 
                     a {
                         color: #333
-                        font-size: 1.5rem
+                        font-size: 1.3rem
                     }
 
                     a:hover {
                         color: #1976D2
                     }
+                }
+
+                .summary{
+                    color: #666
+                    font-size: 1rem
                 }
 
                 .date {
@@ -643,11 +659,6 @@
                 }
 
                 .meta {
-                    display-flex()
-                    flex-wrap(wrap)
-                    align-items(center)
-                    justify-content(space-between)
-
                     .l {
                         flex: 1
                         display-flex()
@@ -691,23 +702,21 @@
 
                     .r {
                         display-flex()
-                        justify-content(flex-end)
-                        width: 40%
+                        justify-content(flex-start)
                         margin: 0.3rem 0
 
                         a {
                             color: #333
                             display: inline-block
-                            padding: 0.7rem
                             text-align: center
                             border-radius: 0.7rem
-                            font-weight: 600
+                            font-weight: 400
                             transition: all 0.3s
-                            background-color: rgb(254, 211, 54)
+                            font-size: 0.5rem
                         }
 
                         a:hover {
-                            color: #fff
+                            color: #111
                             transform: scale(1.1, 1.1)
                         }
                     }

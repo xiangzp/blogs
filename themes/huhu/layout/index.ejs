@@ -1,3 +1,12 @@
+<%
+function getFeaturedImage(item) {
+    var featuredImage = item.featured_image;
+    if (!featuredImage) return '';
+    if (featuredImage.startsWith("http://") || featuredImage.startsWith("https://")) return featuredImage;
+    return config.root + item.path + featuredImage;
+}
+%>
+
 <% if (is_home()){ %>
 <div class="posts">
   <ul>
@@ -38,12 +47,24 @@
       </div>
       <% }%>
       <div class="describe">
+        <% if(post.featured_image){ %>
+          <div class="post-item-image-wrapper">
+            <div class="post-item-image"
+                style="background-image: url('<%= getFeaturedImage(post) %>')"></div>
+          </div>
+        <% } %>
         <div class="title">
           <a href="<%- url_for(post.path) %>"><%= post.title %></a>
         </div>
         <div class="date">
           <span class="iconfont icon-time-circle"></span>
           <span><%- date(post.date, "YY/MM/DD") %></span>
+        </div>
+        <div class="summary">
+          <%= post.intro && post.intro.length > 0 ? post.intro : truncate(strip_html(post.content), {
+              length: config.truncate_len ? config.truncate_len : theme.truncate_len ? theme.truncate_len : 70,
+              omission: '...'
+          }) %>
         </div>
         <% if (post.excerpt) { %>
         <div class="excerpt post-wrap"><%- post.excerpt %></div>
@@ -83,7 +104,7 @@
             </div>
           </div>
           <div class="r">
-            <a href="<%- url_for(post.path) %>">Read More</a>
+            <a href="<%- url_for(post.path) %>">read more...</a>
           </div>
         </div>
       </div>

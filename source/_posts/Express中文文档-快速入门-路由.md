@@ -2,7 +2,9 @@
 title: Express 中文文档 - 快速入门 - 路由
 date: 
         2019-07-31 16:39:27
-tags: 前端
+
+tags: [Express,NodeJs,文档翻译]
+categories: NodeJs
 featured_image: https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_960_720.jpg
 ---
 # 基本的路由

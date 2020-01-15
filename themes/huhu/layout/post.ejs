@@ -1,51 +1,60 @@
+<%
+function getFeaturedImage(item) {
+    var featuredImage = item.featured_image;
+    if (!featuredImage) return '';
+    if (featuredImage.startsWith("http://") || featuredImage.startsWith("https://")) return featuredImage;
+    return config.root + item.path + featuredImage;
+}
+%>
+
 <article class="post-entry">
-    <div class="header">
-      <% if (page.top) { %>
-        <div class="top">
-          <div class="iconfont icon-zuirehotxiankuang animated infinite heartBeat"></div>
-        </div>
-      <% } %>
-      <div class="title"><%- page.title %></div>
-      <div class="meta">
-        <span class="item">
-          <span class="iconfont icon-time-circle"></span>
-          <span><%- date(page.date, "YYYY/MM/DD") %></span>
-        </span>
-
-        <% if (!is_current('about') && theme.valine) {%>
-          <span class="item leancloud-visitors" id="<%- url_for(page.path) %>" data-flag-title="<%- page.title %>">
-            <span class="iconfont icon-eye1"></span>
-            <span class="leancloud-visitors-count"></span>
-          </span>
+    <div class="header <%= page.featured_image ? 'title-image': '' %>" style="background-image: url('<%= getFeaturedImage(page) %>')">
+      <div class="header-inner">
+        <% if (page.top) { %>
+          <div class="top">
+            <div class="iconfont icon-zuirehotxiankuang animated infinite heartBeat"></div>
+          </div>
         <% } %>
-
-        <% if (page.categories && page.categories.data && page.categories.data.length > 0) { %> 
-        <span class="item">
-          <span class="iconfont icon-folder"></span>
-          <span>
-              <% for (var j=0; j < page.categories.data.length; j++) { %>
-                <% if (page.categories.data[j] && page.categories.data[j].name) { %>
-                  <a href="/categories/<%- page.categories.data[j].name %>"><%- page.categories.data[j].name %></a>
-                <% } %>
-              <% } %>
-          </span>
-        </span>
-        <% } %>
-        
-        <% if (page.tags && page.tags.data && page.tags.data.length > 0) { %> 
+        <div class="title"><%- page.title %></div>
+        <div class="meta">
           <span class="item">
-            <span class="iconfont icon-tag1"></span>
+            <span class="iconfont icon-time-circle"></span>
+            <span><%- date(page.date, "YYYY/MM/DD") %></span>
+          </span>
+  
+          <% if (!is_current('about') && theme.valine) {%>
+            <span class="item leancloud-visitors" id="<%- url_for(page.path) %>" data-flag-title="<%- page.title %>">
+              <span class="iconfont icon-eye1"></span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+          <% } %>
+  
+          <% if (page.categories && page.categories.data && page.categories.data.length > 0) { %> 
+          <span class="item">
+            <span class="iconfont icon-folder"></span>
             <span>
-                <% for (var j=0; j < page.tags.data.length; j++) { %>
-                  <% if (page.tags.data[j] && page.tags.data[j].name) { %>
-                    <a href="/tags/<%- page.tags.data[j].name %>"><%- page.tags.data[j].name %></a>
+                <% for (var j=0; j < page.categories.data.length; j++) { %>
+                  <% if (page.categories.data[j] && page.categories.data[j].name) { %>
+                    <a href="/categories/<%- page.categories.data[j].name %>"><%- page.categories.data[j].name %></a>
                   <% } %>
                 <% } %>
             </span>
           </span>
-         <% } %>
-      </div>
-      <div>
+          <% } %>
+          
+          <% if (page.tags && page.tags.data && page.tags.data.length > 0) { %> 
+            <span class="item">
+              <span class="iconfont icon-tag1"></span>
+              <span>
+                  <% for (var j=0; j < page.tags.data.length; j++) { %>
+                    <% if (page.tags.data[j] && page.tags.data[j].name) { %>
+                      <a href="/tags/<%- page.tags.data[j].name %>"><%- page.tags.data[j].name %></a>
+                    <% } %>
+                  <% } %>
+              </span>
+            </span>
+           <% } %>
+        </div>
       </div>
     </div>
     <%- page.content %>
