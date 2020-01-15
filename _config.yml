@@ -108,7 +108,7 @@ jsonContent:
     title: true #文章标题
     date: true #发表日期
     path: true #路径
-    text: true #文本字段
+    text: false #文本字段
     raw: false
     content: false
     slug: false
