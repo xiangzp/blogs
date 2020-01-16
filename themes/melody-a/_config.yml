@@ -18,9 +18,9 @@ theme_color:
 # Main menu navigation
 menu:
   主页: /
-  归档: /archives
-  标签: /tags
-  分类: /categories
+  文章归档: /archives
+  所有标签: /tags
+  文章分类: /categories
   #XXX: /xxx
 
 # Favicon

@@ -17,10 +17,10 @@ copy:
   noSupport: The browser does not support
 
 page:
-  articles: Articles
-  tag: Tag
-  category: Category
-  archives: Archives
+  articles: 所有文章
+  tag: 文章标签
+  category: 文章分类
+  archives: 文章归档
 
 sticky: Sticky
 no_title: No title
