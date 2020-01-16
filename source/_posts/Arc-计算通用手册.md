@@ -4,7 +4,7 @@ author: Xiang
 date: 2020-01-15 11:45:29
 tags: [Geo,算法]
 categories: 前端
-featured_image: 'https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_1280.png'
+top_img: 'https://cdn.pixabay.com/photo/2016/03/27/16/24/holidays-1283014_1280.jpg'
 intro: 整理一些常用的Arc计算方法，在进行地图应用开发的时候应该用得上。
 ---
 #### 整理一些常用的Arc计算方法，在进行地图应用开发的时候应该用得上。

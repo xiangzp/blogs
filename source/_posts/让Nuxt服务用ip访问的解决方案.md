@@ -4,7 +4,7 @@ date:
         2019-07-28 15:16:31
 tags: [Vue,Nuxt]
 categories: 前端
-featured_image: https://cdn.pixabay.com/photo/2017/08/28/21/12/yellow-ipe-2691268_960_720.jpg
+top_img: https://cdn.pixabay.com/photo/2017/08/28/21/12/yellow-ipe-2691268_960_720.jpg
 ---
 # 如何解决？
 

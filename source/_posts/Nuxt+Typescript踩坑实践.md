@@ -4,7 +4,7 @@ date:
         2019-08-30 11:17:34
 tags: [Vue,Nuxt,TypeScript]
 categories: 前端
-featured_image: https://cdn.pixabay.com/photo/2016/02/19/10/15/typewriter-1209140_960_720.jpg
+top_img: https://cdn.pixabay.com/photo/2016/02/19/10/15/typewriter-1209140_960_720.jpg
 ---
 >最近想用 nuxt + typescript 搭建一个基于 Vue服务端渲染 的前端框架。然而随着最近的更新踩了一路的坑，记录一下。
 

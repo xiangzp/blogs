@@ -4,7 +4,7 @@ date:
         2019-08-22 18:13:29
 tags: [Express,NodeJs,文档翻译]
 categories: NodeJs
-featured_image: https://cdn.pixabay.com/photo/2016/11/29/06/15/plans-1867745_960_720.jpg
+top_img: https://cdn.pixabay.com/photo/2016/11/29/06/15/plans-1867745_960_720.jpg
 ---
 # express的use()和中间件
 `express.js`
