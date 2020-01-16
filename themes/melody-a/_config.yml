@@ -2,18 +2,18 @@
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 # ---------------
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00C4B6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00C4B6"
-#   link_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   tag_start_color: "#A4D8FA"
-#   tag_end_color: "#1B9EF3"
-#   header_text_color: "#EEEEEE"
-#   footer_text_color: "#EEEEEE"
+theme_color:
+  enable: true
+  main: "#279fea"
+  paginator: "#279fea"
+  button_hover: "#FF7242"
+  text_selection: "#00C4B6"
+  link_color: "#858585"
+  hr_color: "#A4D8FA"
+  tag_start_color: "#A4D8FA"
+  tag_end_color: "#1B9EF3"
+  header_text_color: "#EEEEEE"
+  footer_text_color: "#EEEEEE"
 
 # Main menu navigation
 menu:
@@ -94,7 +94,7 @@ katex:
 
 # Toggle fireworks (IE >= 10)
 # ---------------
-fireworks: true
+fireworks: false
 
 # Analysis
 # ---------------
@@ -213,20 +213,20 @@ disqus:
 # enable: false
 # uid:
 
-gitment:
+# gitment:
+#   enable: true
+#   owner: 'xiangzp'
+#   repo: 'blog-comments'
+#   client_id: 
+#   client_secret: 
+
+gitalk:
   enable: true
-  owner: xiangzp
-  repo: blog-comments
   client_id: a2a8747826dbd29735d5
   client_secret: 03406bc3f506533e8e1e1b9484b6ba401e43804d
-
-# gitalk:
-#   enable: false
-#   client_id:
-#   client_secret:
-#   repo:
-#   owner:
-#   admin:
+  repo: 'blog-comments'
+  owner: 'xiangzp'
+  admin: 'xiangzp'
 
 # valine comment system. https://valine.js.org
 # valine:
