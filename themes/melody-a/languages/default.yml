@@ -35,7 +35,7 @@ post:
     author: 作者
     link: 分享链接
     copyright_notice: 版权申明
-    copyright_content: '除非另有说明，否则此博客中的所有文章都是在<a href=“%s”>%s</a>下授权的。'
+    copyright_content: '可转载、引用，但需经本人同意后署名作者且注明文章出处，并以相同方式共享。'
 
 
 search: Search

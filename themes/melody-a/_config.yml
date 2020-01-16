@@ -53,8 +53,8 @@ highlight_theme: default
 # ---------------
 social:
   github fab: https://github.com/xiangzp
-  weibo fab: https://weibo.com/3016476477/profile
   zhihu fab: https://www.zhihu.com/people/xiang-zhi-peng-60/activities
+  weibo fab: https://weibo.com/3016476477/profile
 
 # Algolia search
 # ---------------

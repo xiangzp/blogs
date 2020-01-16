@@ -3,7 +3,9 @@ title: Express 指南-路由
 date: 
         2019-07-31 16:45:15
 tags: [Express, NodeJs]
-categories: NodeJs
+categories: 
+- 前端
+- NodeJs
 ---
 # 路由
 路由是指应用程序的端点(uri)如何响应客户机请求。有关路由的介绍，请参阅 [基本路由](https://blog.csdn.net/qq_34301371/article/details/97929400)。
