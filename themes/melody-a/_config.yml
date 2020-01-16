@@ -98,9 +98,9 @@ fireworks: false
 
 # Analysis
 # ---------------
-baidu_analytics:
+baidu_analytics: '04fcda1257c372a3f251f9471f9a1dfc'
 
-google_analytics: UA-156360748-1
+google_analytics:
 
 # Tencent_analytics ID
 tencent_analytics:
