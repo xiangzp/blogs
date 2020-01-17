@@ -2,18 +2,18 @@ sidebar:
   articles: Articles
   tags: Tags
   categories: Categories
-  toggle_site: Toggle site
-  toggle_article: Toggle article
-  catalog: Catalog
-  have_read: You've read
+  toggle_site: 去主页
+  toggle_article: 去看所有文章
+  catalog: 目录
+  have_read: 已经阅读了
 
 footer:
   driven: Driven
   theme: Theme
 
 copy:
-  success: Copy successfully
-  error: Copy error
+  success: 复制成功
+  error: 复制错误
   noSupport: The browser does not support
 
 page:
