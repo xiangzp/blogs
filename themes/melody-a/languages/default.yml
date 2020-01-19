@@ -1,9 +1,9 @@
 sidebar:
-  articles: Articles
-  tags: Tags
-  categories: Categories
+  articles: 文章
+  tags: 标签
+  categories: 分类
   toggle_site: 去主页
-  toggle_article: 去看所有文章
+  toggle_article: 去看当前文章
   catalog: 目录
   have_read: 已经阅读了
 
