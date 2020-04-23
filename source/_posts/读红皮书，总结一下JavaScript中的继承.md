@@ -1,7 +1,7 @@
 ---
 title: 读红皮书，总结一下JavaScript中的继承
 date: 
-        2019-04-23 11:05:06
+        2020-04-23 11:05:06
 tags: [JavaScript基础, 继承]
 categories: 前端
 ---
