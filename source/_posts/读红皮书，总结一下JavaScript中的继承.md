@@ -1,11 +1,10 @@
 ---
 title: 读红皮书，总结一下JavaScript中的继承
 date: 
-        2019-08-30 11:05:06
+        2019-04-23 11:05:06
 tags: [JavaScript基础, 继承]
 categories: 前端
 ---
-
 
 ## 对象和继承
 红皮书在第6章重点介绍了`面向对象的程序设计`。在JavaScript中没有类的概念，对于ECMAScript来说，对象基于一个引用类型创建。
@@ -29,6 +28,14 @@ categories: 前端
 缺点：
 - 只能统一在给Child的原型赋值时调用父类的构造方法。也就意味着，Child的实例在创建时无法传递参数。new Child(args) args 不能作用在父类上
 - Parent的构造属性会因为new关键词变成Child的原型属性。那么会导致所有的实例共享该属性。如果该属性是引用类型，比如数组，那么一个实例修改了属性，所有的实例的该属性都会变化
+
+
+重点代码:
+```js
+  Child.prototype = new Parent(30)
+```
+
+实现代码：
 
 ```js
 // 原型链继承
@@ -70,6 +77,15 @@ categories: 前端
 - 可以像构造函数传递参数，生成不同的子类实例
 - 在子类构造函数执行时，用子类的对象执行父类的构造方法，在子类中创建了属性的副本。该副本不受引用类型影响，解决了原型方法这方面的问题
 
+重点代码:
+```js
+  function Child (name, age) {
+    Parent.apply(this, arguments);
+  }
+```
+
+实现代码：
+
 ```js
   // 借用构造函数继承（伪造对象、经典继承）
   function Parent (name, age) {
@@ -110,6 +126,18 @@ categories: 前端
 
 缺点：两次执行了父类构造函数
 
+重点代码:
+```js
+  Parent.apply(this, arguments)
+  
+  ...
+  
+  Child.prototype = new Parent()
+  Child.prototype.constructor = Child
+```
+
+实现代码：
+
 ```js
   // 组合继承
   function Parent (name, age) {
@@ -148,6 +176,8 @@ categories: 前端
 ```
 
 ## 原型式继承
+
+实现代码：
 
 ```js
   // 原型式继承
@@ -209,9 +239,21 @@ categories: 前端
 ## 寄生组合继承
 结合了原型和寄生的优点，利用了组合继承，把第一次用new执行父类构造函数体替换为对对象的原型复制的方法
 
-`只复制了父类原型上的引用类型，而抛弃了的构造属性则通过构造继承的方式获取。`
+**只复制了父类原型上的引用类型，而抛弃了的构造属性则通过构造继承的方式获取。**
 
-这样便是`最理想的继承范式`
+这样便是 **最理想的继承范式**
+
+
+重点代码:
+```js
+  Parent.apply(this, arguments)
+  
+  ...
+  
+  inheritPrototype(Parent, Child)
+```
+
+实现代码：
 
 ```js
   // 寄生组合继承
