@@ -1,7 +1,7 @@
 ---
 title: JavaScript中的同步异步和任务队列
 date: 2020-04-21 17:16:31
-tags: [任务队列]
+tags: [JavaScript基础, 任务队列]
 categories: 前端
 ---
 ![JavaScript 异步、事件循环、任务队列](https://img-blog.csdn.net/20180427162021624?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTAxNzI0Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
