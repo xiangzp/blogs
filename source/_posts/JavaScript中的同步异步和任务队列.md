@@ -4,7 +4,7 @@ date: 2020-04-21 17:16:31
 tags: [JavaScript基础, 任务队列]
 categories: 前端
 ---
-![JavaScript 异步、事件循环、任务队列](https://img-blog.csdn.net/20180427162021624?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTAxNzI0Ng==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![JavaScript 异步、事件循环、任务队列](https://file.veryzhun.com/buckets/adsb-dm/keys/20200423-042347-sfidcuh0gyv8q8ec.png)
 
 JS引擎是单线程的。
 
