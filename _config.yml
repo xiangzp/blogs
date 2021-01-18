@@ -99,9 +99,8 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: 
-    https://github.com/xiangzp/xiangzp.github.io,master
-    git@106.14.97.235:/home/git/repos/blog.git,master
+  repo: git@106.14.97.235:/home/git/repos/blog.git
+  branch: master
 
 # 本地搜索
 search:
