@@ -173,7 +173,7 @@ comment:
   # See: https://github.com/gitalk/gitalk
   gitalk:
     github_id: xiangzp
-    repository: https://github.com/xiangzp/blog_comment
+    repository: https://github.com/xiangzp/blog_comment.git
     client_id: 2884c9f28839d7ef5a47
     client_secret: 3b083776e77af5f9728dc79cc2b0cfb162f0a543
 
