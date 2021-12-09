@@ -5,7 +5,7 @@ date:
 tags: [Github,域名,部署]
 categories:
 - 前端
-- 运维
+- 瞎折腾
 top_img: https://cdn.pixabay.com/photo/2017/01/03/18/51/lost-places-1950246_960_720.jpg
 ---
 ## 准备
