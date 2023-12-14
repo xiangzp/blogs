@@ -4,7 +4,7 @@
 base_info:
   title: 北冥有鱼
   author: zpxiang
-  url: https://xiangzhipeng.top/
+  url: https://xiangzp.github.io/blogs/
   # Logo image (You can use local image, image external link or don’t fill)
   logo_img:
 
@@ -16,10 +16,10 @@ style:
   primary_color: "#0066CC"
 
   # Avatar (You can use local image or image external link)
-  avatar: /images/avatar.png
+  avatar: /blogs/images/avatar.png
 
   # Favicon (You can use local image or image external link)
-  favicon: /images/favicon.svg
+  favicon: /blogs/images/favicon.svg
 
   # Article image align position, value: left | center
   article_img_align: left
