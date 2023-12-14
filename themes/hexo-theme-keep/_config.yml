@@ -16,10 +16,10 @@ style:
   primary_color: "#0066CC"
 
   # Avatar (You can use local image or image external link)
-  avatar: /blogs/images/avatar.png
+  avatar: /images/avatar.png
 
   # Favicon (You can use local image or image external link)
-  favicon: /blogs/images/favicon.svg
+  favicon: /images/favicon.svg
 
   # Article image align position, value: left | center
   article_img_align: left
