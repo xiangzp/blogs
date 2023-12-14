@@ -1,3 +1,10 @@
+---
+title: 什么是ChatGPT
+tags: ChatGPT
+categories: 教程
+date: 2023/5/10 22:14
+---
+
 **1 引言**
 
 如题，这个视频是关于 ChatGPT 的，一个足以影响整个人类社会的技术。

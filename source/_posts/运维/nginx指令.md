@@ -1,3 +1,10 @@
+---
+title: nginx指令
+tags: 运维
+categories: 运维
+date: 2020/3/12 22:14
+---
+
 **systemctl**
 
 ```shell

@@ -1,3 +1,11 @@
+---
+title: new操作符的原理
+date: 
+        2019-08-08 15:16:31
+tags: [JavaScript基础]
+categories: 前端
+---
+
 ```js
 var Foo = function () {}
 

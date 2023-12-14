@@ -1,9 +1,7 @@
 ---
 title: 一个因为前后端分离项目上线因OPTIONS请求403引发的思考
-author: Xiang
-tags: http
+tags: 疑难记录
 categories: 前端
-top_img: 'https://cdn.pixabay.com/photo/2016/04/24/13/24/error-1349562_1280.png'
 date: 2019-02-05 19:55:00
 ---
 最近在上线Vue+Vue Router(history模式)的前后端分离项目时，发现所有的 预检请求（preflight request）都403报错。然而后端反馈已经添加注解允许跨域（具体如何操作，本文暂不描述，可以去自行搜索）。于是排查是否是nginx不支持options请求，并成功定位问题。

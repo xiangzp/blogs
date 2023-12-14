@@ -1,3 +1,10 @@
+---
+title: 中文的顿号 、不能base64，报错‘ The string to be encoded contains characters outside of the Latin1 range’ 为什么
+tags: 疑难记录
+categories: 前端
+date: 2023-12-01 19:55:00
+---
+
 # 中文的顿号 、不能base64，报错‘ The string to be encoded contains characters outside of the Latin1 range’ 为什么
 
 中文的顿号 "、" 在Unicode编码中属于CJK标点符号范畴，而Latin1编码只包含了西欧语言使用的字符集。因此，当尝试使用Latin1编码来对含有中文顿号的字符串进行Base64编码时，会出现报错“ The string to be encoded contains characters outside of the Latin1 range”，这是因为Latin1编码无法正确处理非西欧语言的字符。要解决这个问题，可以使用其他支持Unicode字符编码的方法来进行Base64编码。

@@ -38,8 +38,8 @@ style:
   # First screen
   first_screen:
     enable: true
-    background_img: /images/bg.svg # You can use local image or image external link
-    description: 一个爱拍照和写代码的厨子
+    background_img: /blogs/images/bg.svg # You can use local image or image external link
+    description: 一个拍照和写代码的厨子
 
   # Scroll style settings
   scroll:
@@ -174,8 +174,8 @@ comment:
   gitalk:
     github_id: xiangzp
     repository: blog_comment
-    client_id: a83820dfd43623dc166e
-    client_secret: f5282659ff52c45af0b8ed33f1d5fc3a63eac8a4
+    client_id: 6af02ad770d38086009e
+    client_secret: 1684f5dcb39c216894fb74987a9e808a6e74a017
 
   # Twikoo
   # See: https://github.com/imaegoo/twikoo
