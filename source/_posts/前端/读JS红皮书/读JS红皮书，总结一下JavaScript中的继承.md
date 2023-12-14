@@ -267,8 +267,7 @@ categories: 前端
   }
 
   function Child (name, age) {
-    // 第 2 次调用Parent
-    // 缺点: 多次调用了父类的构造函数
+    // 第 1 次调用Parent
     Parent.apply(this, arguments)
   }
 
@@ -277,7 +276,7 @@ categories: 前端
     F.prototype = o
     // new 关键词操作后 范围一个对象
     // constructor 丢失
-    return new F() // { __proto__: Parent.prototype }
+    return new F // { __proto__: Parent.prototype }
   }
 
   function inheritPrototype (Parent, Child) {
